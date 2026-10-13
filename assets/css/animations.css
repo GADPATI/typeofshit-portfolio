@@ -1,0 +1,22 @@
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(100px);
+  animation: reveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.visual-card:nth-child(2) { animation-delay: 0.2s; }
+.visual-card:nth-child(3) { animation-delay: 0.4s; }
+.project-card:nth-child(2) { animation-delay: 0.1s; }
+.project-card:nth-child(3) { animation-delay: 0.2s; }
